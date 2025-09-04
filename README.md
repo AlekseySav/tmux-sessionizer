@@ -1,7 +1,5 @@
 # simple tmux sessionizer
 
-Yet another tmux sessionizer
-
 ![tmux sessionizer example](./docs/images/example.png)
 
 ## Requirements
