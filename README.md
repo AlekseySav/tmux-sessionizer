@@ -26,7 +26,7 @@ Format of each line is `pattern:name`, where `pattern` is a **glob pattern** to 
 
 ## Usage
 
-See `tmux-sessionizer --help` or look for help menu
+See `tmux-sessionizer --help` and check out help menu
 
 ### Integration with tmux
 
