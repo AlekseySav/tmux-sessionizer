@@ -1,5 +1,4 @@
 #!/bin/bash
-# simple tmux sessionizer
 
 ACTIVE_HINT="\e[032mA\e[0m"
 OPEN_HINT="\e[033mO\e[0m"
@@ -108,6 +107,9 @@ open_tmux() {
 # session format: -|A|O <name> <path>
 run_fzf() {
 	fzf --print-query -i --info=inline --with-nth=1,2 --nth=2 --ansi $color_opt \
+		--border=none --list-border=none --input-border=none --header-border=none --no-scrollbar \
+		--preview-window=noborder,right,25 \
+		--preview='echo -e "\n\n\e[037mCtrl+C\tQuit\nCtrl+A\tAdd new entry\nCtrl+X\tKill session\nEnter\tOpen session\e[0m"' \
 		--bind="ctrl-a:become(echo ADD)" \
 		--bind="ctrl-x:become(echo KILL; echo {})"
 }

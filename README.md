@@ -1,6 +1,6 @@
-# simple tmux sessionizer
+# tmux sessionizer
 
-![tmux sessionizer example](./docs/images/example.png)
+![tmux sessionizer example](./docs/images/example.jpg)
 
 ## Requirements
 
