@@ -1,5 +1,7 @@
 # tmux sessionizer
 
+Navigate through tmux sessions, create/open/kill tmux sessions
+
 ![tmux sessionizer example](./docs/images/example.jpg)
 
 ## Requirements
@@ -24,9 +26,7 @@ Format of each line is `pattern:name`, where `pattern` is a **glob pattern** to 
 
 ## Usage
 
-To use tmux-sessionizer, simply run the executable file without arguments: `./tmux-sessionizer`.
-It opens a fuzzy-finder with already opened tmux sessions as well as ones specified in `$HOME/.config/tmux-sessionizer/sessions`.
-If a session has been chosen, `./tmux-sessionizer` will open this session or create one if it does not exist (in directory, specified in configuration file).
+See `tmux-sessionizer --help` or look for help menu
 
 ### Integration with tmux
 
@@ -34,5 +34,5 @@ Nice way to use tmux-sessionizer is through binding key to open tmux popup, for 
 
 ```
 # at $HOME/.config/tmux/tmux.conf
-bind-key j display-popup -x 10% -y 10% -w 60% -h 60% -E "<path to tmux-sessionizer>"
+bind-key j display-popup -w 70% -h 70% -E "<path to tmux-sessionizer>"
 ```
